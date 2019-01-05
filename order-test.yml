@@ -14,7 +14,9 @@ spring:
         order-message-input:
           destination: order-message
         order-message-output:
-          destination: order-message
+          destination: order-message        
+        group: 
+          order-message: order
   rabbitmq:
     host: 192.168.99.100
     port: 5672
