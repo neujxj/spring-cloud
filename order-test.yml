@@ -12,11 +12,11 @@ spring:
     stream:
       bindings:
         order-message-input:
+          group: order
           destination: order-message
         order-message-output:
-          destination: order-message        
-        group: 
-          order-message: order
+          group: order
+          destination: order-message
   rabbitmq:
     host: 192.168.99.100
     port: 5672
