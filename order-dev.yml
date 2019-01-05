@@ -11,6 +11,7 @@ spring:
   cloud:    
     stream:
       bindings:
+        group: order
         order-message-input:
           destination: order-message
         order-message-output:
