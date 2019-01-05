@@ -21,3 +21,6 @@ PRODUCT:
     NFLoadBalanceRulerClassName: com.netflix.loadbalancer.RandomRule
 env:
   dev
+girl:
+  name: lili
+  age: 18
