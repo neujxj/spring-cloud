@@ -8,6 +8,13 @@ spring:
     url: jdbc:mysql://192.168.1.23/sell?characterEncoding=utf-8&useSSl=false
   jpa:
       show-sql: true  
+  cloud:    
+    stream:
+      bindings:
+        order-message-input:
+          destination: order-message
+        order-message-output:
+          destination: order-message
   rabbitmq:
     host: 192.168.99.100
     port: 5672
